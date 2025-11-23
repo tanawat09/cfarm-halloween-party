@@ -1,0 +1,37 @@
+/* นำเข้าฟอนต์จาก Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Creepster&family=Kanit:wght@300;400;600&display=swap');
+
+:root {
+  font-family: 'Kanit', sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color-scheme: dark;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #020617;
+  /* สีพื้นหลังสำรอง */
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+/* แต่ง Scrollbar เป็นสีม่วง-แดง */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0f0518;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(to bottom, #9333ea, #dc2626);
+  border-radius: 5px;
+  border: 2px solid #0f0518;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #dc2626;
+}
