@@ -358,7 +358,7 @@ export default function App() {
               <h2 className="text-4xl font-['Creepster'] text-purple-400 drop-shadow-[0_0_10px_rgba(168,85,247,0.6)] mb-2 tracking-widest">
                 GUEST LIST
               </h2>
-              <p className="text-slate-400">รายชื่อผู้ถูกปลุกวิญญาณทั้งหมด</p>
+              <p className="text-slate-400">รายชื่อผู้ร่วมงาน</p>
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6">
@@ -367,7 +367,7 @@ export default function App() {
                 <div className="bg-black/30 p-3 rounded-full mb-2">
                   <Users className="w-8 h-8 text-purple-300" />
                 </div>
-                <p className="text-purple-200 text-sm uppercase tracking-widest mb-1">TOTAL GUESTS</p>
+                <p className="text-purple-200 text-sm uppercase tracking-widest mb-1">TOTAL</p>
                 {isLoadingList ? (
                   <Loader2 className="w-8 h-8 animate-spin text-purple-500 mx-auto" />
                 ) : (
@@ -375,7 +375,7 @@ export default function App() {
                     {registrants.length}
                   </p>
                 )}
-                <p className="text-xs text-purple-300/60 mt-2">วิญญาณทั้งหมด</p>
+                <p className="text-xs text-purple-300/60 mt-2">จำนวนผู้ร่วมงานทั้งหมด</p>
               </div>
 
               {/* Department Breakdown Area (Grid Layout) */}
