@@ -1,15 +1,12 @@
 version: '3.8'
-
 services:
   cfarm-web:
     container_name: cfarm-party-web
     build:
       context: .
       dockerfile: Dockerfile
-    image: cfarm-party:latest
     restart: always
-    # Port ภายนอก:ภายใน (เปลี่ยน 8080 เป็นพอร์ตอื่นได้ถ้าชน)
     ports:
-      - "8044:80"
+      - "8080:80"
     environment:
       - NODE_ENV=production
